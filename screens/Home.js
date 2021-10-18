@@ -1,5 +1,5 @@
 import React from "react";
-import { View , Text} from "react-native";
+import { View ,StyleSheet, Text} from "react-native";
 import { Ionicons, FontAwesome, AntDesign } from "@expo/vector-icons";
 
 export default function Home(params) {
@@ -36,13 +36,26 @@ export default function Home(params) {
       </View>
       
       <View style={{flexDirection:"row",justifyContent:"space-between" }}>
-          <Text style={{backgroundColor:"rgb(211,211,211)", color:"orange", borderRadius:5, padding:5}}>All</Text>
-          <Text style={{backgroundColor:"rgb(211,211,211)", color:"grey", borderRadius:5, padding:5}}>Roadbike</Text>
-          <Text style={{backgroundColor:"rgb(211,211,211)", color:"grey", borderRadius:5, padding:5}}>Mountain</Text>
-          <Text style={{backgroundColor:"rgb(211,211,211)", color:"grey", borderRadius:5, padding:5}}>Urban</Text>
+          <Text style={styles.textcontainer}>All</Text>
+          <Text style={styles.textcontainer}>Roadbike</Text>
+          <Text style={styles.textcontainer}>Mountain</Text>
+          <Text style={styles.textcontainer}>Urban</Text>
       </View>
 
-      
+
+
+
+
     </View>
+
+    
   );
+  
 }
+const styles = StyleSheet.create({
+    textcontainer: {
+      backgroundColor:"rgb(211,211,211)",
+       color:"grey", 
+       borderRadius:5, paddingHorizontal:20,paddingVertical:5 ,justifyContent:"center", alignItems:"center", marginTop:5
+    },
+  });
