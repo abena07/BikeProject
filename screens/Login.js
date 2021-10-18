@@ -3,7 +3,7 @@ import { View, Text, Image, Touchable } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" , backgroundColor:"white"}}>
       <Image
@@ -30,6 +30,10 @@ export default function Login() {
       </TouchableOpacity>
 
       <TouchableOpacity
+      
+      onPress={() => {
+        navigation.navigate("Home");
+      }}
         style={{
           backgroundColor: "black",
           padding: 10,
