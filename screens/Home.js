@@ -1,6 +1,12 @@
 import React from "react";
-import { View ,StyleSheet, Text,Image} from "react-native";
-import { Ionicons, FontAwesome, AntDesign } from "@expo/vector-icons";
+import { View, StyleSheet, Text, Image } from "react-native";
+import {
+  Ionicons,
+  FontAwesome,
+  AntDesign,
+  Foundation,
+  EvilIcons,
+} from "@expo/vector-icons";
 
 export default function Home(params) {
   return (
@@ -28,95 +34,150 @@ export default function Home(params) {
       </View>
 
       <View>
-          <Text style={{color:"grey", marginTop:5,}}> The World's <Text style={{color:"orange",fontWeight:"bold", fontSize:20}}>Best Bike</Text></Text>
+        <Text style={{ color: "grey", marginTop: 5 }}>
+          {" "}
+          The World's{" "}
+          <Text style={{ color: "orange", fontWeight: "bold", fontSize: 20 }}>
+            Best Bike
+          </Text>
+        </Text>
       </View>
 
       <View>
-          <Text style={{color:"black", fontWeight:"bold", fontSize:15, marginTop:10}}>Categories</Text>
+        <Text
+          style={{
+            color: "black",
+            fontWeight: "bold",
+            fontSize: 15,
+            marginTop: 10,
+          }}
+        >
+          Categories
+        </Text>
       </View>
-      
+
       <View style={styles.viewcontainer}>
-          <Text style={styles.textcontainer}>All</Text>
-          <Text style={styles.textcontainer}>Roadbike</Text>
-          <Text style={styles.textcontainer}>Mountain</Text>
-          <Text style={styles.textcontainer}>Urban</Text>
+        <Text style={styles.textcontainer}>All</Text>
+        <Text style={styles.textcontainer}>Roadbike</Text>
+        <Text style={styles.textcontainer}>Mountain</Text>
+        <Text style={styles.textcontainer}>Urban</Text>
       </View>
 
       <View style={styles.viewcontainer}>
         <View style={styles.bikecontainer}>
-          <Image style={styles.imagecontainer} source={require("./images/bike4.png")}/>
-        <Text style={styles.text1container}>Pinarello Bike</Text>
-        <Text style={styles.text2container}>1,700.00</Text>
+          <View style={styles.heartcontainer}>
+            <EvilIcons name="heart" size={24} color="black" />
+          </View>
+          <Image
+            style={styles.imagecontainer}
+            source={require("../images/bike4.png")}
+          />
+          <Text style={styles.text1container}>Pinarello Bike</Text>
+
+          <View style={styles.viewcontainer}>
+            <Foundation name="dollar" size={24} color="orange" />
+            <Text style={styles.text2container}> 1,700.00</Text>
+          </View>
         </View>
-        <View style={styles.bikecontainer}>
-        <Image style={styles.imagecontainer} source={require("./images/bike5.png")}/>
-        <Text style={styles.text1container}>Brompton Bike</Text>
-        <Text style={styles.text2container}>1,500.00</Text>
-        </View>
 
+        <View style={styles.bikecontainer}>
+          <View style={styles.heartcontainer}>
+            <EvilIcons name="heart" size={24} color="black" />
+          </View>
+          <Image
+            style={styles.imagecontainer}
+            source={require("../images/bike5.png")}
+          />
+          <Text style={styles.text1container}>Brompton Bike </Text>
+
+          <View style={styles.viewcontainer}>
+            <Foundation name="dollar" size={24} color="orange" />
+            <Text style={styles.text2container}> 1,500.00</Text>
+          </View>
+        </View>
       </View>
 
       <View style={styles.viewcontainer}>
         <View style={styles.bikecontainer}>
-          <Image style={styles.imagecontainer} source={require("./images/bike1.png")}/>
+          <View style={styles.heartcontainer}>
+            <EvilIcons name="heart" size={24} color="black" />
+          </View>
+          <Image
+            style={styles.imagecontainer}
+            source={require("../images/bike1.png")}
+          />
           <Text style={styles.text1container}>Schwinn Bike</Text>
-        <Text style={styles.text2container}>1,200.00</Text>
+
+          <View style={styles.viewcontainer}>
+            <Foundation name="dollar" size={24} color="orange" />
+            <Text style={styles.text2container}> 1,200.00</Text>
+          </View>
         </View>
         <View style={styles.bikecontainer}>
-        <Image style={styles.imagecontainer} source={require("./images/bike3.png")}/>
-        <Text style={styles.text1container}>Norco Bike</Text>
-        <Text style={styles.text2container}>9,800.00</Text>
+          <View style={styles.heartcontainer}>
+            <EvilIcons name="heart" size={24} color="black" />
+          </View>
+          <Image
+            style={styles.imagecontainer}
+            source={require("../images/bike3.png")}
+          />
+          <Text style={styles.text1container}>Norco Bike</Text>
+
+          <View style={styles.viewcontainer}>
+            <Foundation name="dollar" size={24} color="orange" />
+            <Text style={styles.text2container}> 9,800.00</Text>
+          </View>
         </View>
-
       </View>
-
-
-
     </View>
-
-    
   );
-  
 }
 const styles = StyleSheet.create({
-    textcontainer: {
-      backgroundColor:"rgb(211,211,211)",
-       color:"grey", 
-       borderRadius:5, paddingHorizontal:20,paddingVertical:5 ,justifyContent:"center", alignItems:"center", marginTop:5
-    },
+  textcontainer: {
+    backgroundColor: "rgb(211,211,211)",
+    color: "grey",
+    borderRadius: 5,
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 5,
+  },
 
-    bikecontainer:{
-      backgroundColor:"rgb(211,211,211)",
-      borderRadius:5,
-      justifyContent:"center",
-      alignItems:"center",
-      marginTop:5,
-      paddingHorizontal:15,
-      paddingVertical:20,
-     
-    },
+  bikecontainer: {
+    backgroundColor: "rgb(211,211,211)",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 5,
+    paddingHorizontal: 15,
+    paddingVertical: 20,
+  },
 
-    imagecontainer:{
-      flex: 1,
+  imagecontainer: {
+    flex: 1,
     width: 140,
     height: 210,
-    resizeMode: 'contain'
-      
-     
-    },
-    text1container:{
-      color:"grey",
-      fontSize:16,
-      fontWeight:500
-      
-    },
-    text2container:{
-      fontWeight:"bold",
-      fontSize:18
-    },
-    viewcontainer:{
-      flexDirection:"row", 
-      justifyContent:"space-between"
-      
-    }
-  });
+    resizeMode: "contain",
+  },
+  text1container: {
+    color: "grey",
+    fontSize: 16,
+    fontWeight: 500,
+  },
+  text2container: {
+    fontWeight: "bold",
+    fontSize: 18,
+  },
+  viewcontainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  heartcontainer: {
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 5,
+    position: "relative",
+    left: 50,
+  },
+});
