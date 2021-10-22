@@ -4,6 +4,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { AntDesign } from "@expo/vector-icons";
 import EmailInput from "../components/EmailInput";
 import PassowordInput from "../components/PasswordInput";
+import UserInput from "../components/UserInput";
 
 export default function Login({ navigation }) {
   return (
@@ -30,8 +31,10 @@ export default function Login({ navigation }) {
       <Text style={{ color: "black", fontSize: 40, fontWeight: "bold" }}>
         Power Bike Shop
       </Text>
+      <UserInput/>
       <EmailInput />
       <PassowordInput/>
+    
        
       <TouchableOpacity
         style={{
