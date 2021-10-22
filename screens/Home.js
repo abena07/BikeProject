@@ -151,13 +151,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 5,
     paddingHorizontal: 15,
-    paddingVertical: 20,
+    paddingVertical: 5,
   },
 
   imagecontainer: {
     flex: 1,
     width: 140,
-    height: 210,
+    height: 170,
     resizeMode: "contain",
   },
   text1container: {
