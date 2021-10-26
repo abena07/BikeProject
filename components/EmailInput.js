@@ -21,7 +21,7 @@ export default function EmailInput() {
       style={styles.input}
       placeholderTextColor="#666"
       autoCapitalize="none"
-      autoCompleteType={false}
+      
       labelValue={email}
       onChangeText={(userEmail) => setEmail(userEmail)}/>
       
@@ -42,13 +42,13 @@ const styles =StyleSheet.create({
         borderWidth:1,
         flexDirection:'row',
         alignItems:'center',
-        backgroundColor:"fff",
+        backgroundColor:"rgb(255,255,255)",
         
     },
 
     iconContainer:{
         padding:10,
-        height:"100%",
+    
         justifyContent:"center",
         alignItems:"center",
         borderRightColor:"#ccc",
@@ -61,7 +61,7 @@ const styles =StyleSheet.create({
         padding:10,
         fontSize:16,
         flex:1,
-        fontFamily:"Lato-Regular",
+        
         color:"#333",
         justifyContent:"center",
         alignItems:"center"

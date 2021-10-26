@@ -53,7 +53,7 @@ export default function Login({ navigation }) {
 
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("Home");
+          navigation.navigate("NewHome");
         }}
         style={{
           backgroundColor: "black",
@@ -71,7 +71,7 @@ export default function Login({ navigation }) {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+        <Text style={{ marginTop: 10, fontSize: 16, color: "grey" }}>
           {" "}
           Not a member? {""}
           <Text style={{ color: "orange", fontWeight: "bold" }}>SignUp</Text>

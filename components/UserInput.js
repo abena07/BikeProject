@@ -40,13 +40,13 @@ const styles =StyleSheet.create({
         borderWidth:1,
         flexDirection:'row',
         alignItems:'center',
-        backgroundColor:"fff",
+        backgroundColor:"rgb(255,255,255)",
         // height
     },
 
     iconContainer:{
         padding:10,
-        height:"100%",
+        
         justifyContent:"center",
         alignItems:"center",
         borderRightColor:"#ccc",
@@ -59,7 +59,6 @@ const styles =StyleSheet.create({
         padding:10,
         fontSize:16,
         flex:1,
-        fontFamily:"Lato-Regular",
         color:"#333",
         justifyContent:"center",
         alignItems:"center"
@@ -71,8 +70,7 @@ const styles =StyleSheet.create({
         fontSize:16,
         borderRadius:8,
         borderWidth:1,
-        // width
-        // hwight
+        
         
     }
 })

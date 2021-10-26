@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet,  View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import Login from './screens/login';
-import Home from './screens/home';
+import Login from './screens/Login';
+import Home from './screens/Home';
 
 export default function App() {
   const MainNavigator = createStackNavigator();

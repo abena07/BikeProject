@@ -8,7 +8,9 @@ import {
   EvilIcons,
 } from "@expo/vector-icons";
 
+
 export default function Home(params) {
+
   return (
     <View
       style={{
@@ -151,7 +153,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 5,
     paddingHorizontal: 15,
-    paddingVertical: 5,
+    paddingVertical: 100,
   },
 
   imagecontainer: {
@@ -163,7 +165,7 @@ const styles = StyleSheet.create({
   text1container: {
     color: "grey",
     fontSize: 16,
-    fontWeight: 500,
+    fontWeight: "bold",
   },
   text2container: {
     fontWeight: "bold",
