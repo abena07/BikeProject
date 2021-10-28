@@ -92,6 +92,10 @@ export default function Home({ navigation }) {
 
       
       <FlatList
+      numColumns={2}
+      
+      key={2}
+
         data={details}
         
         renderItem={({ item }) => (
@@ -144,7 +148,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(211,211,211)",
     borderRadius: 5,
     marginTop: 5,
-    paddingHorizontal: 15,
+    paddingHorizontal: 10,
     paddingVertical: 70,
     
     
@@ -170,11 +174,9 @@ const styles = StyleSheet.create({
   viewcontainer: {
     flexDirection: "row",
     justifyContent: "space-between",
+    marginHorizontal:5
   },
-  viewcontainer2:{
-    flexDirection:"row",
-    
-  },
+
   heartcontainer: {
     backgroundColor: "white",
     borderRadius: 20,
