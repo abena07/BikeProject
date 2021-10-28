@@ -2,17 +2,21 @@ import React from 'react';
 import { StyleSheet,  View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import LandingPage from './screens/LandingPage';
 import Login from './screens/Login';
 import Home from './screens/Home';
+import ProductDetaiLs from './screens/ProductDetails';
 
 export default function App() {
   const MainNavigator = createStackNavigator();
   return (
     <View style={{ flex: 1 }} >
    <NavigationContainer>
-     <MainNavigator.Navigator screenOptions={{headerShown:false}} initialRouteName = "Login">
-       <MainNavigator.Screen name ="Login" component={Login}/>
+     <MainNavigator.Navigator screenOptions={{headerShown:false}} initialRouteName = "LandingPage">
+       <MainNavigator.Screen name ="LandingPage" component={LandingPage}/>
        <MainNavigator.Screen name ="Home" component={Home}/>
+       <MainNavigator.Screen name ="Login" component={Login}/>
+       <MainNavigator.Screen name ="ProductDetails" component={ProductDetaiLs}/>
      </MainNavigator.Navigator>
    </NavigationContainer>
    
