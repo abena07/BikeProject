@@ -36,6 +36,7 @@ export default function Home({ navigation }) {
       image: require("../images/bike3.png"),
     },
   ]);
+  const numColumns =2
 
   return (
     <View
@@ -89,15 +90,19 @@ export default function Home({ navigation }) {
         <Text style={styles.textcontainer}>Urban</Text>
       </View>
 
+      
       <FlatList
         data={details}
+        
         renderItem={({ item }) => (
+          
           <TouchableOpacity
             onPress={() =>
               navigation.navigate("ProductDetails", { data: item })
             }
           >
-            <View style={styles.viewcontainer2}>
+            
+            <View style={styles.viewcontainer}>
               <View style={styles.bikecontainer}>
                 <View style={styles.heartcontainer}>
                   <EvilIcons name="heart" size={24} color="black" />
@@ -116,6 +121,7 @@ export default function Home({ navigation }) {
             
      
           </TouchableOpacity>
+          
         )}
       />
     </View>
@@ -154,7 +160,7 @@ const styles = StyleSheet.create({
     color: "grey",
     fontSize: 16,
     fontWeight: "bold",
-    marginLeft:20
+    marginLeft:5
   },
   text2container: {
     fontWeight: "bold",
