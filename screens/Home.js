@@ -9,6 +9,7 @@ import {
   EvilIcons,
 } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
+import Tabs from "../components/Tabs";
 
 export default function Home({ navigation }) {
   const [details, setDetails] = useState([
@@ -84,12 +85,7 @@ export default function Home({ navigation }) {
         </Text>
       </View>
       {/* tabs */}
-      <View style={styles.viewcontainer}>
-        <Text style={styles.textcontainer}>All</Text>
-        <Text style={styles.textcontainer}>Roadbike</Text>
-        <Text style={styles.textcontainer}>Mountain</Text>
-        <Text style={styles.textcontainer}>Urban</Text>
-      </View>
+      <Tabs/>
 
       
       <FlatList
