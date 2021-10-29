@@ -8,6 +8,7 @@ import {
   Foundation,
   EvilIcons,
 } from "@expo/vector-icons";
+import NavBar from "../components/NavBar";
 
 export default function Home({ navigation }) {
   const [details, setDetails] = useState([
@@ -128,7 +129,9 @@ export default function Home({ navigation }) {
           
         )}
       />
+      <NavBar/>
     </View>
+    
   );
 }
 
@@ -174,7 +177,8 @@ const styles = StyleSheet.create({
   viewcontainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginHorizontal:5
+    marginHorizontal:5,
+    marginBottom:10
   },
 
   heartcontainer: {

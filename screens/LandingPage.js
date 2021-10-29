@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image,TouchableOpacity  } from "react-native";
 
 import { AntDesign } from "@expo/vector-icons";
+import NavBar from "../components/NavBar";
 
 
 export default function LandingPage({ navigation }) {
@@ -72,6 +73,7 @@ export default function LandingPage({ navigation }) {
           <Text style={{ color: "orange", fontWeight: "bold" }}>SignUp</Text>
         </Text>
       </TouchableOpacity>
+    
     </View>
   );
 }
