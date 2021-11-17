@@ -7,9 +7,9 @@ export default function NavBar() {
     return (
        <View stye={styles.main}>
            <View style={styles.subview}>
-         
+            <TouchableOpacity  onPress={() => navigation.navigate("Home")}>
            <FontAwesome name="home" size={24} color="black" />
-          
+          </TouchableOpacity>
            <TouchableOpacity
         style={{
           justifyContent: "center",
