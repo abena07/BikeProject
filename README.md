@@ -1,3 +1,3 @@
 # BikeProject
-An e-commerce bikeapp
 
+This is an e-commerce app built with react native and expo.
